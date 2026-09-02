@@ -8,18 +8,18 @@ class Vlt < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raynosc/vlt/releases/download/v1.0.0/vlt_v1.0.0_darwin_arm64.tar.gz"
-      sha256 "c95d903557ec6ef41f4947ac6a04c062163c2f72ffb8641e76a7b369b438bbc3"
+      url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_darwin_arm64.tar.gz"
+      sha256 "cb3187a5c070b9dd8704f1b16f0435f306f440d9c890b83cf8b3a37d02226c7f"
     else
-      url "https://github.com/raynosc/vlt/releases/download/v1.0.0/vlt_v1.0.0_darwin_amd64.tar.gz"
-      sha256 "c01d757be339191a541a1fb4b5f993b1b64b035c64ad707769f05bbef7efac92"
+      url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_darwin_amd64.tar.gz"
+      sha256 "43cafc338870f9e2e27f2294fe0ca52dd6f59e72c19affc26e29887569720c4a"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/raynosc/vlt/releases/download/v1.0.0/vlt_v1.0.0_linux_amd64.tar.gz"
-      sha256 "a3ad2e80f0745db5f0d6f38f128a52a5551602e9b960aac926e7fc932d253956"
+      url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_linux_amd64.tar.gz"
+      sha256 "368704653b5625c7e8ac99f05967ff9d809bfd8368ba0ac6713f0b1c148db333"
     end
   end
 
