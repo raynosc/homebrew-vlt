@@ -4,22 +4,22 @@
 class Vlt < Formula
   desc "Local-first, zero-knowledge secrets and password manager"
   homepage "https://github.com/raynosc/vlt"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_darwin_arm64.tar.gz"
-      sha256 "0c6b287f4f8c49baefd69836ecc10f2c504cbaa84632e0abafd9e29e2c771c53"
+      sha256 "a05eedd1c95c8f287a5d0b8ba607c0c9a8dc18fe2eeb7a285f8ad34091dad0b2"
     else
       url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_darwin_amd64.tar.gz"
-      sha256 "b609fcbdd6be38e0a1c21e830c859328c0cddf63a0e1224c57a73c5db37b7137"
+      sha256 "a3640c8e044d6c531920332ec054982a2260c70e15bb5d50272a9431b9d5bce4"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_linux_amd64.tar.gz"
-      sha256 "5a35bf3c2183d89c39bc2bc2c65f66e5da298d783f6a797ff49de4440f3bd66d"
+      sha256 "029ab24ede46e1cd44dbefa6e2f907cbdbd29a93640be205ea8a1b6914db6819"
     end
   end
 
