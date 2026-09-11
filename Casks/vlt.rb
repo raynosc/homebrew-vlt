@@ -1,6 +1,6 @@
 cask "vlt" do
-  version "1.0.0"
-  sha256 "2477d48a1dd06df489eedca16216f9f58b703312850bc39fb6fcd53e1dde3812"
+  version "1.0.1"
+  sha256 "a899130b9caf32c57cac74c6f09d7082c8887ebbee09035f402a3ab420d6a07a"
 
   url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_macOS_Universal.app.zip"
   name "vlt"
