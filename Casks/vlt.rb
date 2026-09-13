@@ -1,6 +1,6 @@
 cask "vlt" do
-  version "1.0.2"
-  sha256 "7e8765a0e1be0ae5cca78bbdc6461ac15084ebc1665ad9b6e072264e722584e1"
+  version "1.0.3"
+  sha256 "8571ed1f5f064acba221b7f475c10a9ec6995a1842c6b911968d7caa9d611cf3"
 
   url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_macOS_Universal.app.zip"
   name "vlt"
@@ -11,7 +11,6 @@ cask "vlt" do
   binary "#{appdir}/vlt.app/Contents/MacOS/vlt", target: "vlt-gui"
   binary "#{appdir}/vlt.app/Contents/MacOS/vlt-cli", target: "vlt"
   binary "#{appdir}/vlt.app/Contents/MacOS/vlt-tui", target: "vlt-tui"
-  binary "#{appdir}/vlt.app/Contents/MacOS/vlt-quick", target: "vlt-quick"
   binary "#{appdir}/vlt.app/Contents/MacOS/vlt-sync", target: "vlt-sync"
 
   postflight do

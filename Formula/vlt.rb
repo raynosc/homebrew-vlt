@@ -4,22 +4,22 @@
 class Vlt < Formula
   desc "Local-first, zero-knowledge secrets and password manager"
   homepage "https://github.com/raynosc/vlt"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_darwin_arm64.tar.gz"
-      sha256 "a05eedd1c95c8f287a5d0b8ba607c0c9a8dc18fe2eeb7a285f8ad34091dad0b2"
+      sha256 "5846ba6d24f8668d8c0a90e729768fff3c9e1fde98bd8d459bc2c292f9461bae"
     else
       url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_darwin_amd64.tar.gz"
-      sha256 "a3640c8e044d6c531920332ec054982a2260c70e15bb5d50272a9431b9d5bce4"
+      sha256 "5940a287b7f2c9aec8bf25d0ace293fa329470bb06b458fda6249de29a607765"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/raynosc/vlt/releases/download/v#{version}/vlt_v#{version}_linux_amd64.tar.gz"
-      sha256 "029ab24ede46e1cd44dbefa6e2f907cbdbd29a93640be205ea8a1b6914db6819"
+      sha256 "0b6690641f01a72d7be380da7466ddd7976ef9f3ce568d368456e4592fb1c654"
     end
   end
 
@@ -27,7 +27,6 @@ class Vlt < Formula
     bin.install "vlt"
     bin.install "vlt-gui" if File.exist?("vlt-gui")
     bin.install "vlt-tui"
-    bin.install "vlt-quick"
     bin.install "vlt-sync"
   end
 
